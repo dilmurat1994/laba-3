@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>lab3</title>
+<body>
+<script language="Javascript">
+var arr = [1, 0, -1, -5, 2, -3, 4, 110, -18],
+      fMax;
+      
+  function getMax(arr) {
+    var arrLen = arr.length,
+        maxEl = arr[0];
+    for (var i = 0; i < arrLen; i++) {
+      if (maxEl < arr[i]) {
+        maxEl = arr[i];
+      }
+    }
+    return maxEl;
+  }
+fMax = getMax(arr);
+  document.write("fMax result: ",fMax);
+ 
+</script>
+</body>
+</html>
